@@ -5,7 +5,7 @@ from email.mime.text import MIMEText
 def enviar_email(html):
     # Configurações do email
     email_de = 'cachoeirinhaconexao@gmail.com'
-    senha = 'ytkl djsd jclm btus'  
+    senha = 'XXXXXXXXXX'  
     email_para = ['julia.souza121@gmail.com', 'gusxmorais@gmail.com']
     assunto = 'Relatório Conexão Cachoeirinha'
 
