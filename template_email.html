@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Feedbacks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333333;
+        }
+
+        .feedback {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+
+        .feedback:last-child {
+            border-bottom: none;
+        }
+
+        .feedback-type {
+            font-weight: bold;
+            color: #d9534f;
+            /* vermelho para reclamação */
+        }
+
+        .feedback-text {
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .feedback-info {
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.8em;
+            color: #aaa;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Relatório de Feedbacks</h1>
+        {% for fb in feedbacks %}
+        <div class="feedback">
+            <div class="feedback-type">{{ fb.opcao }}</div>
+            <div class="feedback-text">{{ fb.texto }}</div>
+            <div class="feedback-info">
+                De {{ fb.nome }} - {{ fb.bairro }}, {{ fb.rua }} - {{ fb.mesAno }}
+            </div>
+        </div>
+        {% endfor %}
+        <div class="footer">
+            Este é um relatório automático de feedbacks recebidos.
+        </div>
+    </div>
+</body>
+
+</html>

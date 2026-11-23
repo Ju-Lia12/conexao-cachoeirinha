@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+*{
+    margin:0;
+    padding:0;    
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#ffffff;
+    color:#000000;
+    font-family:"Libertinus Serif", serif;
+    font-weight:400;
+}
+
+header{
+    padding:1rem;
+    background-color:#70cbff;
+    text-align:center;
+}
+
+main{
+    padding:2rem;
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+}
+
+section{
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+h3{
+    color:#38b6ff;
+    font-size:2rem;
+}
+
+p{
+    font-size:x-large;
+    text-align:justify;
+}
+
+input[type="text"] {
+    width:100%;
+    padding:0.5rem;
+    border:solid #70cbff;
+    border-radius:10px;
+    font-family: "Libertinus Serif", serif;
+}
+
+select{
+    padding:0.5rem;
+    border-radius:5px;
+    outline:none;
+}
+
+textarea[name="texto"] {
+    width:100%;
+    padding:0.5rem;
+    border:solid #70cbff;
+    border-radius:10px;
+    font-family: "Libertinus Serif", serif;
+}
+
+button{
+    padding:0.5rem;
+    border-radius:5px;
+}
+
+.imagem{
+    height:5rem;
+}
+    
+footer{
+    background-color:#70cbff;
+    text-align:right;
+    
+}
+

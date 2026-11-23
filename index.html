@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Conexão Cachoeirinha</title>
+    <meta name="description"
+        content="Através desse portal, os cidadãos poderão registrar suas experiências e preocupações em relação aos seus bairros, fornecendo sugestões, avaliando os serviços públicos e relatando problemas que afetam seu dia a dia.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Conexão Cachoeirinha</h1>
+        <h2>Transformando dados em ações, a cidade inteligente começa com você.</h2>
+    </header>
+    <main>
+        <!--O que ë?-->
+        <section>
+            <h3>O que é?</h3>
+            <p>A plataforma <strong>Conexão Cachoeirinha</strong> é uma solução digital inovadora que visa criar uma
+                conexão direta
+                entre os moradores e o poder público de Cachoeirinha/RS. Através desse portal, os cidadãos poderão
+                registrar suas experiências e preocupações em relação aos seus bairros, fornecendo sugestões, avaliando
+                os serviços públicos e relatando problemas que afetam seu dia a dia.</p>
+        </section>
+        <!--Para que foi criado?-->
+        <section>
+            <h3>Para que foi criado?</h3>
+            <p>O <strong>Conexão Cachoeirinha</strong> foi criado com o objetivo de aprimorar a comunicação entre a
+                população e a
+                prefeitura de Cachoeirinha. Ao reunir informações e sugestões dos moradores, a plataforma oferece um
+                canal eficiente para que as demandas da comunidade sejam ouvidas e levadas em consideração no
+                planejamento de projetos e melhorias urbanas. Nossa missão é transformar a cidade com base no que
+                realmente importa para quem vive nela.</p>
+        </section>
+        <!--Como funciona?-->
+        <section>
+            <h3>Como funciona?</h3>
+            <p>O funcionamento é simples e acessível: qualquer morador de Cachoeirinha pode acessar a plataforma e
+                registrar suas reclamações, sugestões ou avaliações sobre o seu bairro. Os dados coletados são
+                organizados e enviados à prefeitura em relatórios periódicos, facilitando a tomada de decisões para
+                ações de melhoria urbana.</p>
+        </section>
+        <!--Campos a serem preenchidos pelo usuário-->
+        <section>
+            <h3>Deixe a sua opinião:</h3>
+            <form id="meuFormulario">
+                <label for="opcao">Deixar uma:</label>
+                <select name="opcao" id="opcao">
+                    <option value="Avaliação">Avaliação</option>
+                    <option value="Sugestão">Sugestão</option>
+                    <option value="Reclamação">Reclamação</option>
+                </select> <br>
+                <br>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" /> <br>
+                <br>
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" /> <br>
+                <br>
+                <label for="rua">Rua:</label>
+                <input type="text" id="rua" name="rua" /> <br>
+                <br>
+                <label for="texto">Escreva aqui o seu relato:</label> <br>
+                <textarea name="texto" id="texto" rows="10" cols="100"></textarea> <br>
+                <button type="submit">Enviar</button>
+
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        <img class="imagem" src="img.png" alt="silhueta cidade">
+    </footer>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
